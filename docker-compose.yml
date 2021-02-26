@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  angular-app:
+    container_name: TP1
+    build:
+      context: .
+    ports:
+      - '4200:4200'
+    volumes:
+      - ./angular-app:/app
+      - /app/node_modules
